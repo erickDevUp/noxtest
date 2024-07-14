@@ -11,9 +11,10 @@ type Props = {
 
 export default function Profile({ photo, alt, name, role }: Props) {
     return (
-        <Stack align={"center"}>
+        
+        <Stack maxW={[140,"100%"]} align={"center"} textAlign={"center"}>
             <Image src={photo} alt={alt} width={100} height={100} borderRadius={"full"} objectFit={"cover"} />
-            <Heading as='h4' pt={1} size={"md"} fontWeight={"semibold"} color={"nox.text"}>
+            <Heading as='h4' pt={1} size={["sm","md"]} fontWeight={"semibold"} color={"nox.text"}>
                 {name}
             </Heading>
             <Text fontSize={"md"} fontWeight={"normal"} color={"nox.text"}>
