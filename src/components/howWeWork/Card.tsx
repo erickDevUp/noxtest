@@ -15,8 +15,8 @@ type Props = {
 
 export default function Card({ img, text, title, btnText, btnLink, imgPosition }: Props) {
     return (
-        <Stack align={"center"} direction={imgPosition === "left" ? "row" : "row-reverse"}>
-            <Image src={img} alt="card" width={600} height={550} />
+        <Stack align={"center"} direction={['column',imgPosition === "left" ? "row" : "row-reverse"]}>
+            <Image src={img} alt="card" width={607} height={551} />
             <Stack align={"start"} spacing={8} textAlign={"start"} >
                 <Heading as='h3' pt={1} size={"lg"} fontWeight={"medium"} color={"nox.text"} >
                     {title}
