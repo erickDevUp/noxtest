@@ -12,9 +12,11 @@ export default function HowWeWork({ }: Props) {
   return (
 
     <LayoutSection title={"¿Cómo trabajamos?"} subtitle={"Le ayudamos a desarrollar cualquier tipo de solución. Debe seguir los siguientes pasos para podernos comunicar y conocer sus necesidades."}>
-      {data.map((item) => (
-        <Card title={item.title} text={item.text} btnText={item.btnText} btnLink={item.btnLink} img={item.img} imgPosition={item.imgPosition} key={item.id} />
-      ))}
+      <Stack >
+        {data.map((item) => (
+          <Card title={item.title} text={item.text} btnText={item.btnText} btnLink={item.btnLink} img={item.img} imgPosition={item.imgPosition} key={item.id} />
+        ))}
+      </Stack>
     </LayoutSection>
 
   )
