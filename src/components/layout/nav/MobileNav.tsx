@@ -49,7 +49,7 @@ export default function MobileNav({ routes }: Props) {
         </Flex>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           {routes.map((route) => (
-            <BtnNav id={route.id} label={route.label} href={route.href} />
+            <BtnNav key={route.id} id={route.id} label={route.label} href={route.href} />
           ))}
 
         </div>

@@ -14,7 +14,7 @@ export default function DesktopNav({ routes }: Props) {
       
     >
       {routes.map((route) => (
-        <BtnNav id={route.id} label={route.label} href={route.href} />
+        <BtnNav key={route.id} id={route.id} label={route.label} href={route.href} />
       ))}
     </Flex>
   );
