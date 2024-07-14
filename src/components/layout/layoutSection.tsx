@@ -5,13 +5,15 @@ import Subtitle from '../customs/Subtitle'
 
 type Props = {
   title: string;
-  subtitle: string
+  subtitle?: string;
+  maxW?: number;
   children: React.ReactNode
 }
 
-export default function LayoutSection({ title, subtitle, children }: Props) {
-  return (<Stack spacing={10}>
-    <Stack maxW={800} textAlign={"center"} spacing={5} margin={"auto"}>
+export default function LayoutSection({ title, subtitle = "", maxW = 800, children }: Props) {
+  return (
+  <Stack spacing={[10,20]}>
+    <Stack maxW={maxW} textAlign={"center"} spacing={5} margin={"auto"}>
       <Title text={title} />
       <Subtitle text={subtitle} />
     </Stack>
