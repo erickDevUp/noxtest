@@ -10,7 +10,7 @@ export default function Card({ text, title, icon }: Props) {
             <Heading as='h3' pt={1} size={"lg"} fontWeight={"bold"} color={"nox.text"} textAlign={"center"}>
                 {title}
             </Heading>
-            <Text fontSize={"md"} fontWeight={"normal"} color={"nox.text"} align={"center"}>
+            <Text fontSize={"md"} fontWeight={"normal"} color={"nox.text-secondary"} align={"center"}>
                 {text}
             </Text>
         </Stack>
