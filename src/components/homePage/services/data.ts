@@ -1,4 +1,4 @@
-import { Management, LandingPage, Mobile , Decentralization, Illustration, Posters } from "@/components/services/icons"
+import { Management, LandingPage, Mobile , Decentralization, Illustration, Posters } from "@/components/homePage/services/icons"
 
 //data title text icon
 export const data = [

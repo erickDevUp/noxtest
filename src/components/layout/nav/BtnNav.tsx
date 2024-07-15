@@ -1,4 +1,4 @@
-import GreenButtom from '@/components/customs/GreenButtom'
+import GreenButtom from '@/components/homePage/customs/GreenButtom'
 import { Button, Stack } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'

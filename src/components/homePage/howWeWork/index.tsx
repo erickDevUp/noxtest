@@ -4,7 +4,7 @@ import Card from './Card'
 import Title from '../customs/Title'
 import Subtitle from '../customs/Subtitle'
 import { Box, Image, Stack } from '@chakra-ui/react'
-import LayoutSection from '../layout/layoutSection'
+import LayoutSection from '../../layout/layoutSection'
 
 type Props = {}
 

@@ -1,7 +1,7 @@
 import { Box, Image, Stack } from "@chakra-ui/react"
 import { data } from "./data"
 import Profile from "./profile"
-import LayoutSection from "../layout/layoutSection"
+import LayoutSection from "../../layout/layoutSection"
 
 
 

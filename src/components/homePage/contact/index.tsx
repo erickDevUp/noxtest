@@ -2,7 +2,7 @@ import { AspectRatio, Box, FormControl, Input, Stack, Textarea } from '@chakra-u
 import React from 'react'
 import Contacts from './contacts'
 import { data } from './data'
-import LayoutSection from '../layout/layoutSection'
+import LayoutSection from '../../layout/layoutSection'
 import GreenButtom from '../customs/GreenButtom'
 import Form from './form'
 

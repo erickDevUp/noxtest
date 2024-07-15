@@ -1,7 +1,7 @@
 import { Button, Stack } from "@chakra-ui/react"
 import { buttonsTags, data } from "./data"
 import Card from "./card"
-import LayoutSection from "../layout/layoutSection"
+import LayoutSection from "../../layout/layoutSection"
 import BtnsSelect from "./btnsSelect"
 
 

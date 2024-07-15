@@ -2,7 +2,7 @@ import { Stack } from "@chakra-ui/react"
 
 import Card from "./Card"
 import { data } from "./data"
-import LayoutSection from "../layout/layoutSection"
+import LayoutSection from "../../layout/layoutSection"
 
 type Props = {}
 

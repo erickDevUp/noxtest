@@ -1,7 +1,7 @@
 import { Stack } from '@chakra-ui/react'
 import React from 'react'
-import Title from '../customs/Title'
-import Subtitle from '../customs/Subtitle'
+import Title from '../homePage/customs/Title'
+import Subtitle from '../homePage/customs/Subtitle'
 
 type Props = {
   title: string;
