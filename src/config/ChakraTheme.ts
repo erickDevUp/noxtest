@@ -9,6 +9,7 @@ export const chakraTheme = extendTheme({
       "dark": "#313131",
       "light": "#FBFBFB",
       "text": "#111827",
+      "text-secondary": "##374151",
       "text-blog": "#181818",
       "text-blog-light": "#7B7B7B",
     },
