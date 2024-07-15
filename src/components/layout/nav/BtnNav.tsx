@@ -11,7 +11,6 @@ type Props = {
 
 export function BtnNav({ id, label, href }: Props) {
     return (<Button
-        key={id}
         as={Link}
         variant="ghost"
         aria-label={label}
