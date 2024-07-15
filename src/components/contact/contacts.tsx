@@ -10,13 +10,13 @@ type Props = {
 
 export default function Contacts({ text, textLink, href, icon }: Props) {
     return (
-        <Stack maxW={213} direction={'row'} alignItems={'center'}>
+        <Stack maxW={["100%",213]} direction={'row'} alignItems={'center'}>
             <Box p={3}>
                 {icon}
             </Box>
             <Stack gap={0}>
                 <Text textColor={"nox.primary"} fontSize={'sm'} fontWeight={'semibold'}>{text}</Text>
-                <Link fontSize={'xs'} href={href}>{textLink}</Link>
+                <Link fontSize={'xs'} href={href} textColor={"nox.text-secoundary"}>{textLink}</Link>
             </Stack>
         </Stack>
     )
