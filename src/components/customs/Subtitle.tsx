@@ -1,11 +1,11 @@
 import { Text } from '@chakra-ui/react'
 import React from 'react'
 
-type Props = {text: string, textAlign?: "center" | "start" | "end"}
+type Props = {text: string}
 
-export default function Subtitle({text,textAlign="center"}: Props) {
+export default function Subtitle({text}: Props) {
   return (
-    <Text fontSize={"lg"} fontWeight={"normal"} color={"nox.text"} align={textAlign}>
+    <Text fontSize={"lg"} fontWeight={"normal"} color={"nox.text"} >
       {text}
     </Text>
   )
