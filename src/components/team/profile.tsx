@@ -17,7 +17,7 @@ export default function Profile({ photo, alt, name, role }: Props) {
             <Heading as='h4' pt={1} size={["sm","md"]} fontWeight={"semibold"} color={"nox.text"}>
                 {name}
             </Heading>
-            <Text fontSize={"md"} fontWeight={"normal"} color={"nox.text"}>
+            <Text fontSize={["sm","md"]} fontWeight={"normal"} color={"nox.text"}>
                 {role}
             </Text>
         </Stack>
