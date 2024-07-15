@@ -13,5 +13,5 @@ export const navRoutes: NavRoutes = [
     { id: 4, label: 'Trabajos', href: '#' },
     { id: 5, label: 'Comentarios', href: '#' },
     { id: 6, label: 'Contacto', href: '#' },
-    { id: 7, label: 'Blog', href: '#' },
+    { id: 7, label: 'Blog', href: '/blog' },
 ];
