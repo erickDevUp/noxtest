@@ -12,7 +12,7 @@ export default function Works({ }: Props) {
     return (
         <LayoutSection title={"Selección de trabajos"} subtitle="Estos son algunos trabajos que hemos trabajado" >
            <BtnsSelect/>
-            <Stack id="works" spacing={[2,8]} align={"center"} justify={"center"} direction={"row"} wrap={"wrap"}>
+            <Stack id="works" spacing={[2,5]} align={"center"} justify={"center"} direction={"row"} wrap={"wrap"}>
                 {data.map((item) => (
                     <Card img={item.img} name={item.name} alt={item.name + " nox work"} key={item.id} />
                 ))}
