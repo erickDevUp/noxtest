@@ -75,4 +75,27 @@ export const data = [
         name: 'Maubius',
         img: '/img/home/work1.png',
     }
-]   
+]
+//id text
+export const buttonsTags = [
+    {
+        id: 1,
+        text: "Web development"
+    },
+    {
+        id: 2,
+        text: "App development"
+    },
+    {
+        id: 3,
+        text: "Web Design"
+    },
+    {
+        id:4,
+        text:"Ilustraciones"
+    },
+    {
+        id:5,
+        text:"Trabajos en PVC"
+    }
+]
