@@ -5,7 +5,7 @@ type Props = {text: string}
 
 export default function Subtitle({text}: Props) {
   return (
-    <Text fontSize={"lg"} fontWeight={"normal"} color={"nox.text"} >
+    <Text fontSize={["md","lg"]} fontWeight={"normal"} color={"nox.text-secondary"} >
       {text}
     </Text>
   )
