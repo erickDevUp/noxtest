@@ -10,7 +10,7 @@ export default function Nav() {
     return (
         <Box bg="linear-gradient(#F0FAF4 , #F3FBF6 , #FFFFFF )" paddingY={10} >
 
-            <Stack maxW={1440} margin={"auto"} justifyContent={"space-between"} direction="row" align="center" color={"nox.text"}>
+            <Stack maxW={1220} px={[7,0]} margin={"auto"} justifyContent={"space-between"} direction="row" align="center" color={"nox.text"}>
                 <Stack spacing={5} direction="row" align="center" justifyContent={["space-between", "normal"]} w="full">
 
                     <Image src={"img/logotipo_nox.svg"} alt="logotipo" width={87} height={40} />
