@@ -52,7 +52,7 @@ export default function MobileNav({ routes }: Props) {
           </Flex>
           <Stack align={"center"} spacing={5} pb={5}>
             {routes.map((route) => (
-              <BtnNav key={route.id} id={route.id} label={route.label} href={route.href} />
+              <BtnNav  onClick={() => changeDisplay(false)} key={route.id+"nav"} id={route.id} label={route.label} href={route.href} />
             ))}
 
           </Stack>

@@ -6,10 +6,11 @@ import React from 'react'
 type Props = {
     id: number,
     label: string,
-    href: string
+    href: string,
+    onClick?: () => void
 }
 
-export function BtnNav({ id, label, href }: Props) {
+export function BtnNav({ id, label, href ,onClick}: Props) {
     return (<Button
         as={Link}
         variant="ghost"
@@ -19,6 +20,7 @@ export function BtnNav({ id, label, href }: Props) {
         href={href}
         fontSize={"sm"}
         fontWeight={"semibold"}
+        onClick={onClick}
     >
         {label}
     </Button>

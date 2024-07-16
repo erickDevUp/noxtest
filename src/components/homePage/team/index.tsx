@@ -9,7 +9,7 @@ type Props = {}
 
 export default function Team({ }: Props) {
     return (
-        <Box position={"relative"}>
+        <Box id="Nuestro-Equipo" position={"relative"}>
             <Image className="float-animation-ornament" objectFit={"scale-down"} src={"img/home/points3.svg"} alt={"ornament nox"} position={"absolute"} right={0} zIndex={-5} top={["-50px", "-100px"]} width={190} height={216} />
 
 

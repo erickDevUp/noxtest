@@ -7,11 +7,11 @@ interface Route {
 export type NavRoutes = Array<Route>;
 // src/components/layout/navRoutes.ts
 export const navRoutes: NavRoutes = [
-    { id: 1, label: 'Servicios', href: '#' },
-    { id: 2, label: 'Pasos', href: '#' },
-    { id: 3, label: 'Nuestro Equipo', href: '#' },
-    { id: 4, label: 'Trabajos', href: '#' },
-    { id: 5, label: 'Comentarios', href: '#' },
-    { id: 6, label: 'Contacto', href: '#' },
+    { id: 1, label: 'Servicios', href: '#Servicios' },
+    { id: 2, label: 'Pasos', href: '#Pasos' },
+    { id: 3, label: 'Nuestro Equipo', href: '#Nuestro-Equipo' },
+    { id: 4, label: 'Trabajos', href: '#Trabajos' },
+    { id: 5, label: 'Comentarios', href: '#Comentarios' },
+    { id: 6, label: 'Contacto', href: '#Contacto' },
     { id: 7, label: 'Blog', href: '/blog' },
 ];
