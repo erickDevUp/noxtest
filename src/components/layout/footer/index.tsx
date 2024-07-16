@@ -14,7 +14,9 @@ export default function Footer({ }: Props) {
 
             <Stack paddingTop={16} px={[7, 0]} paddingBottom={5} spacing={10} color={"#757575"} maxW={1220} margin={"auto"}>
                 <Stack justifyContent={"space-between"} direction={["column", "row"]} align={["start", "center"]} >
-                    <Image src={"img/logotipo_nox.svg"} alt="logotipo" width={87} height={40} />
+                    <Link href="/">
+                        <Image src={"/img/logotipo_nox.svg"} alt="logotipo" width={87} height={40} />
+                    </Link>
                     <Stack direction="row" align="center" wrap={"wrap"} spacing={2}>
                         {navRoutes.map((route) => (
                             <BtnNav id={route.id} label={route.label} href={route.href} />
