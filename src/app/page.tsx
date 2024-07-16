@@ -10,7 +10,7 @@ import { Box, Stack } from "@chakra-ui/react";
 export default function Home() {
   return (
     <Box>
-      <Stack paddingX={[7,0]} maxW={1220} margin={"auto"} spacing={[32,48]} my={[32,48]}>
+      <Stack paddingX={[7,0]} maxW={["full",1220]} margin={"auto"} spacing={[32,48]} my={[32,48]}>
         <Hero />
         <Services />
         <HowWeWork />
