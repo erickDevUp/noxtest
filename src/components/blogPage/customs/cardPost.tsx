@@ -20,7 +20,7 @@ export default function CardPost({ img, date, author, title, description, tags,s
             <Stack justifyContent={"space-between"} align={"center"} direction={"row"}>
                 <Heading as="h3" fontSize={"2xl"} fontWeight={"semibold"} color="nox.text-blog">{title}</Heading>
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 11L11 1M11 1H1M11 1V11" stroke="#181818" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M1 11L11 1M11 1H1M11 1V11" stroke="#181818" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
             </Stack>
 

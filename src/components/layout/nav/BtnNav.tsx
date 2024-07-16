@@ -4,13 +4,12 @@ import Link from 'next/link'
 import React from 'react'
 
 type Props = {
-    id: number,
     label: string,
     href: string,
     onClick?: () => void
 }
 
-export function BtnNav({ id, label, href ,onClick}: Props) {
+export function BtnNav({ label, href ,onClick}: Props) {
     return (<Button
         as={Link}
         variant="ghost"

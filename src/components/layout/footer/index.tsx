@@ -19,7 +19,7 @@ export default function Footer({ }: Props) {
                     </Link>
                     <Stack direction="row" align="center" wrap={"wrap"} spacing={2}>
                         {navRoutes.map((route) => (
-                            <BtnNav id={route.id} label={route.label} href={route.href} />
+                            <BtnNav key={route.id} label={route.label} href={route.href} />
                         ))}
                     </Stack>
                 </Stack>
