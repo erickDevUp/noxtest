@@ -1,5 +1,6 @@
+import { ArticleType } from "@/interfaces/blog";
 
-export const Posts = [
+export const Posts:ArticleType[] = [
     {
       img: "/img/blog/post4.png",
       date: "2023-04-01",
