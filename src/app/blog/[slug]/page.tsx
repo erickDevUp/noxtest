@@ -5,7 +5,7 @@ import { Badge, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { notFound } from "next/navigation";
 import React from "react";
 
-export async function getArticle(slug: string) {
+export function getArticle(slug: string) {
   const allPosts = Posts.concat(Featured);
 
   const article = allPosts.find((post) => post.slug === slug);
@@ -17,7 +17,7 @@ export async function getArticle(slug: string) {
 
 export default async function Article({ params }: { params: any }) {
   const slug = params.slug;
-  const article = await getArticle(slug);
+  const article = getArticle(slug);
   const { title, description, author, date, img, tags } = article;
 
   return (
