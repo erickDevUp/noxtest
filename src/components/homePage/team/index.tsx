@@ -9,11 +9,11 @@ type Props = {}
 
 export default function Team({ }: Props) {
     return (
-        <Box id="Nuestro-Equipo" position={"relative"}>
+        <Box  position={"relative"}>
             <Image className="float-animation-ornament" objectFit={"scale-down"} src={"img/home/points3.svg"} alt={"ornament nox"} position={"absolute"} right={0} zIndex={-5} top={["-50px", "-100px"]} width={190} height={216} />
 
 
-            <LayoutSection maxW={1000} title={"El equipo creativo detrás de la puerta"} >
+            <LayoutSection id="Nuestro-Equipo" maxW={1000} title={"El equipo creativo detrás de la puerta"} >
                 <Stack wrap={"wrap"} spacing={[10, 32]} align={"start"} direction="row" justify={"center"}>
                     {data.map((item) => (
                         <Profile photo={item.photo} alt={item.name + " nox team"} name={item.name} role={item.role} key={item.id} />

@@ -10,9 +10,9 @@ type Props = {}
 
 export default function Works({ }: Props) {
     return (
-        <LayoutSection title={"Selección de trabajos"} subtitle="Estos son algunos trabajos que hemos trabajado" >
+        <LayoutSection  id="Trabajos" title={"Selección de trabajos"} subtitle="Estos son algunos trabajos que hemos trabajado" >
            <BtnsSelect/>
-            <Stack id="Trabajos" spacing={[2,5]} align={"center"} justify={"center"} direction={"row"} wrap={"wrap"}>
+            <Stack spacing={[2,5]} align={"center"} justify={"center"} direction={"row"} wrap={"wrap"}>
                 {data.map((item) => (
                     <Card img={item.img} name={item.name} alt={item.name + " nox work"} key={item.id} />
                 ))}

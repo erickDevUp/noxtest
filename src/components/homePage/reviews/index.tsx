@@ -15,8 +15,8 @@ export default function Reviews({ }: Props) {
 
 
     return (
-        <LayoutSection title={"Nuestros Clientes Hablan"} subtitle="Hemos pedido a alguno de nuestros clientes que emitan su valoración y estos son sus comentarios" >
-            <Stack id='Comentarios' align={'center'}>
+        <LayoutSection id='Comentarios' title={"Nuestros Clientes Hablan"} subtitle="Hemos pedido a alguno de nuestros clientes que emitan su valoración y estos son sus comentarios" >
+            <Stack  align={'center'}>
 
                 <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_74_335)">

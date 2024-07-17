@@ -8,12 +8,13 @@ type Props = {
   subtitle?: string;
   maxW?: number;
   textAlign?:"center"|"end"|"start"|"left"|"right";
-  children: React.ReactNode
+  children: React.ReactNode;
+  id?:string
 }
 
-export default function LayoutSection({ title, subtitle = "", maxW = 800,textAlign="center", children }: Props) {
+export default function LayoutSection({id, title, subtitle = "", maxW = 800,textAlign="center", children }: Props) {
   return (
-  <Stack spacing={[10,16]}>
+  <Stack id={id} spacing={[10,16]}>
     <Stack maxW={maxW} textAlign={textAlign} spacing={5} margin={"auto"}>
       <Title text={title} />
       <Subtitle text={subtitle} />

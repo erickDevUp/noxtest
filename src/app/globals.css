@@ -10,3 +10,6 @@
   .float-animation-ornament {
     animation:  floatOrnament 7s infinite alternate;
   }
+  html {
+    scroll-behavior: smooth;
+  }
