@@ -5,7 +5,9 @@ import Reviews from "@/components/homePage/reviews";
 import Services from "@/components/homePage/services";
 import Team from "@/components/homePage/team";
 import Works from "@/components/homePage/works";
+import { getMetadata } from "@/utils/metaSEO";
 import { Box, Stack } from "@chakra-ui/react";
+import { Metadata } from "next";
 
 export default function Home() {
   return (
@@ -27,4 +29,14 @@ export default function Home() {
       <Contact />
     </Box>
   );
+}
+
+
+export function generateMetadata(): Metadata {
+  return getMetadata({
+    titleSEO: "Nox Agency",
+    descriptionSEO: "Nox Agency es una agencia de desarrollo web y diseño",
+    keywordsSEO: ["nox", "agency", "desarrollo", "web", "diseño"],
+    ogImg: "/img/ph.jpg",
+  });
 }

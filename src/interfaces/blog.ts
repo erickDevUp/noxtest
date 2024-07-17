@@ -7,3 +7,4 @@ export interface ArticleType {
   description: string;
   tags: string[];
 }
+

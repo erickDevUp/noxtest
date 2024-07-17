@@ -1,6 +1,8 @@
 import AllPosts from "@/components/blogPage/allPosts";
 import FeaturedPosts from "@/components/blogPage/featuredPosts";
+import { getMetadata } from "@/utils/metaSEO";
 import { Stack } from "@chakra-ui/react";
+import { Metadata } from "next";
 import { Suspense } from "react";
 
 export default async function Blog() {
@@ -26,4 +28,15 @@ export default async function Blog() {
       </Suspense>
     </Stack>
   );
+}
+
+
+
+export function generateMetadata(): Metadata {
+  return getMetadata({
+    titleSEO: "Blog Nox Agency",
+    descriptionSEO: "El blog de Nox Agency es un blog de desarrollo web y diseño ",
+    keywordsSEO: ["blog", "nox", "agency"],
+    ogImg: "/img/ph.jpg",
+  });
 }

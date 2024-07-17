@@ -1,12 +1,20 @@
 import RelatedArticles from "@/components/articlePage/relatedArticles";
 import { Posts } from "@/components/blogPage/allPosts/data";
 import { Featured } from "@/components/blogPage/featuredPosts/data";
+import { getMetadata } from "@/utils/metaSEO";
 import { Badge, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { notFound } from "next/navigation";
 import React from "react";
 
+import { Metadata } from 'next';
 
-export default async function Article({ params }: { params: any }) {
+type Props = {
+  params: {
+    slug: string;
+  };
+};
+
+export default async function Article({ params }:Props ) {
   const slug = params.slug;
   const article = getArticle(slug);
   const { title, description, author, date, img, tags } = article;
@@ -73,6 +81,7 @@ export default async function Article({ params }: { params: any }) {
   );
 }
 
+
 function getArticle(slug: string) {
   const allPosts = Posts.concat(Featured);
 
@@ -82,6 +91,18 @@ function getArticle(slug: string) {
   }
   return article;
 }
+
+export function generateMetadata({ params }: Props): Metadata {
+  const postSEO = getArticle(params.slug);
+
+  return getMetadata({
+    titleSEO: postSEO.title,
+    descriptionSEO: postSEO.description,
+    keywordsSEO: postSEO.tags,
+    ogImg: postSEO.img,
+  });
+}
+
 
 function GenericContent() {
   return (
