@@ -2,6 +2,7 @@
 import Contact from "@/components/homePage/contact";
 import Hero from "@/components/homePage/hero";
 import HowWeWork from "@/components/homePage/howWeWork";
+import Reviews from "@/components/homePage/reviews";
 import Services from "@/components/homePage/services";
 import Team from "@/components/homePage/team";
 import Works from "@/components/homePage/works";
@@ -16,6 +17,7 @@ export default function Home() {
         <HowWeWork />
         <Team />
         <Works />
+        <Reviews/>
       </Stack>
       <Contact />
 
