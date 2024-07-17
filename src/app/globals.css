@@ -1,15 +1,16 @@
 @keyframes floatOrnament {
-    0%, 100% {
-      transform: translateY(-5px);
-    }
-    50% {
-      transform: translateY(5px);
-    }
+  0%,
+  100% {
+    transform: translateY(-5px);
   }
-  
-  .float-animation-ornament {
-    animation:  floatOrnament 7s infinite alternate;
+  50% {
+    transform: translateY(5px);
   }
-  html {
-    scroll-behavior: smooth;
-  }
+}
+
+.float-animation-ornament {
+  animation: floatOrnament 7s infinite alternate;
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -18,4 +18,4 @@ export const data = [
     btnLink: "/",
     imgPosition: "right",
   },
-]
+];

@@ -1,12 +1,17 @@
-import { Heading } from '@chakra-ui/react'
-import React from 'react'
+import { Heading } from "@chakra-ui/react";
+import React from "react";
 
-type Props = {text: string}
+type Props = { text: string };
 
-export default function Title({text}: Props) {
+export default function Title({ text }: Props) {
   return (
-    <Heading as='h2' size={["xl","2xl"]} fontWeight={"bold"} color={"nox.text"}>
+    <Heading
+      as="h2"
+      size={["xl", "2xl"]}
+      fontWeight={"bold"}
+      color={"nox.text"}
+    >
       {text}
     </Heading>
-  )
+  );
 }

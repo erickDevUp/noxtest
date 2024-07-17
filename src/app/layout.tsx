@@ -5,7 +5,6 @@ import { ChakraProviders } from "@/config/ChakraProvider";
 import Nav from "@/components/layout/nav/nav";
 import Footer from "@/components/layout/footer";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,7 +23,7 @@ export default function RootLayout({
         <ChakraProviders>
           <Nav />
           {children}
-          <Footer/>
+          <Footer />
         </ChakraProviders>
       </body>
     </html>

@@ -1,6 +1,4 @@
-
-
 export interface Review {
-    id: number
-    text: string
+  id: number;
+  text: string;
 }
