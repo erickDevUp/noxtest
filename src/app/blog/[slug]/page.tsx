@@ -5,7 +5,7 @@ import { Badge, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { notFound } from "next/navigation";
 import React from "react";
 
-export function getArticle(slug: string) {
+function getArticle(slug: string) {
   const allPosts = Posts.concat(Featured);
 
   const article = allPosts.find((post) => post.slug === slug);
