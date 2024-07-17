@@ -5,15 +5,6 @@ import { Badge, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { notFound } from "next/navigation";
 import React from "react";
 
-function getArticle(slug: string) {
-  const allPosts = Posts.concat(Featured);
-
-  const article = allPosts.find((post) => post.slug === slug);
-  if (!article) {
-    notFound();
-  }
-  return article;
-}
 
 export default async function Article({ params }: { params: any }) {
   const slug = params.slug;
@@ -82,7 +73,17 @@ export default async function Article({ params }: { params: any }) {
   );
 }
 
-export function GenericContent() {
+function getArticle(slug: string) {
+  const allPosts = Posts.concat(Featured);
+
+  const article = allPosts.find((post) => post.slug === slug);
+  if (!article) {
+    notFound();
+  }
+  return article;
+}
+
+function GenericContent() {
   return (
     <Text
       fontWeight={"medium"}
