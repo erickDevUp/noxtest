@@ -24,7 +24,7 @@ export default function CardPost({
   return (
     <Stack
       as={Link}
-      href={`blog/${slug}`}
+      href={`/blog/${slug}`}
       maxW={"384px"}
       w={"full"}
       spacing={5}
