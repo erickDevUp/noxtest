@@ -12,7 +12,6 @@ export default function DesktopNav({ routes }: Props) {
       {routes.map((route) => (
         <BtnNav
           key={route.id}
-          id={route.id}
           label={route.label}
           href={route.href}
         />
